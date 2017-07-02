@@ -29,8 +29,8 @@ new Nightmare()
   .type('input[id="id_username"]', userNames[i])
   .type('input[id="id_password"]', passwords[i])
 
-  //.type('input[id="id_username"]', 'networkmiguelg@gmail.com') // Substitute with your username
-  //.type('input[id="id_password"]', 'college2011math') // Substitute with your password
+  //.type('input[id="id_username"]', 'xxxxxx@gmail.com') // Substitute with your username
+  //.type('input[id="id_password"]', 'xxxxxxx') // Substitute with your password
   .click('button[id="signin_button"]')
 
 //I am in
