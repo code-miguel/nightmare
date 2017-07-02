@@ -3,14 +3,14 @@
 //var doc = require('./accounts.js') 
 
 var userNames = [
-  'networkmiguelg@gmail.com',
-  'dloel@gmail.com'
+  'xxxxxx',
+  'xxxx'
   
 ];
 
 var passwords = [
-  'college2011math',
-  '123456'
+  'xxxx',
+  'xxxxx'
 ];
 
 for (var i = 0; i < userNames.length; i++){
