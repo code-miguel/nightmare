@@ -3,14 +3,15 @@
 //var doc = require('./accounts.js') 
 
 var userNames = [
-  'xxxxxx',
-  'xxxx'
+  'xxxxx',
+  'xxxxx'
+  
   
 ];
 
 var passwords = [
-  'xxxx',
-  'xxxxx'
+  'xxxxx',
+  'xxxxxx'
 ];
 
 for (var i = 0; i < userNames.length; i++){
@@ -33,43 +34,44 @@ new Nightmare()
   //.type('input[id="id_password"]', 'xxxxxxx') // Substitute with your password
   .click('button[id="signin_button"]')
 
-//I am in
-//now need to create post
-.wait(10000)
+
+  //.wait(10000)
 
 
 
 
 
-  .refresh()
+  //.refresh()
+  .wait('input[class="create-post-prompt-text-input"]')
   .click('input[class="create-post-prompt-text-input"]')
-  .wait(1000)
+  //.wait(1000)
+  .wait('div[class="postbox-field-dropdown"]')
   .click('div[class="postbox-field-dropdown"]')
-  .wait(1000)
+  //.wait(1000)
   //works above
+  .wait('a.neighborhood-checklist-link')
   .click('a.neighborhood-checklist-link')
-  .wait(1000)
+
+  //.wait(1000)
+  .wait('button.postbox-submit.button-primary')
   .click('button.postbox-submit.button-primary')
-  .wait(10000)
+  //.wait(10000)
+  .wait('body > div:nth-child(19) > div > div.in.modal > div > div > div.cee-modal-body-no-footer.cee-modal-body.postbox-modal-body.modal-body > div > div.postbox-compose > div:nth-child(2) > div > span')
   .click('body > div:nth-child(19) > div > div.in.modal > div > div > div.cee-modal-body-no-footer.cee-modal-body.postbox-modal-body.modal-body > div > div.postbox-compose > div:nth-child(2) > div > span')
-  .wait(10000)
+  //.wait(10000)
+  .wait('body > div:nth-child(19) > div > div.in.modal > div > div > div.cee-modal-body-no-footer.cee-modal-body.postbox-modal-body.modal-body > div > div.postbox-compose > div:nth-child(2) > div.postbox-radio-options > div:nth-child(1) > label > input[type="radio"]')
   .click('body > div:nth-child(19) > div > div.in.modal > div > div > div.cee-modal-body-no-footer.cee-modal-body.postbox-modal-body.modal-body > div > div.postbox-compose > div:nth-child(2) > div.postbox-radio-options > div:nth-child(1) > label > input[type="radio"]')
-  .wait(10000)
-  .type('body > div:nth-child(19) > div > div.in.modal > div > div > div.cee-modal-body-no-footer.cee-modal-body.postbox-modal-body.modal-body > div > div.postbox-compose > div:nth-child(3) > input', 'Bookstore worth going to?')
-  .type('body > div:nth-child(19) > div > div.in.modal > div > div > div.cee-modal-body-no-footer.cee-modal-body.postbox-modal-body.modal-body > div > div.postbox-compose > div:nth-child(4) > textarea', 'Hi everyone, Are there any bookstores that have great atomospher/books?')
+  //.wait(10000)
+  .wait('body > div:nth-child(19) > div > div.in.modal > div > div > div.cee-modal-body-no-footer.cee-modal-body.postbox-modal-body.modal-body > div > div.postbox-compose > div:nth-child(3) > input')
+  .type('body > div:nth-child(19) > div > div.in.modal > div > div > div.cee-modal-body-no-footer.cee-modal-body.postbox-modal-body.modal-body > div > div.postbox-compose > div:nth-child(3) > input', 'Happy July 4th neighbors')
+  .type('body > div:nth-child(19) > div > div.in.modal > div > div > div.cee-modal-body-no-footer.cee-modal-body.postbox-modal-body.modal-body > div > div.postbox-compose > div:nth-child(4) > textarea', 'Wishing everyone a happy July 4th')
   .click('body > div:nth-child(19) > div > div.in.modal > div > div > div.cee-modal-body-no-footer.cee-modal-body.postbox-modal-body.modal-body > div > div.postbox-footer > button')
 
 
   .wait(10000)
-  .screenshot('screen.png')
+  .screenshot(`picture${i}`)
   .end()
  
-
- 
-
-
-
-
 
   .run(function(err, nightmare) {
     if (err) {
