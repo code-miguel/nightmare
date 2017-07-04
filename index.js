@@ -3,23 +3,21 @@
 //var doc = require('./accounts.js') 
 
 var userNames = [
-  'xxxxx',
-  'xxxxx'
+  'xxxxxx',
+  'xxxxxxx',
+  'xxxxxxx'
+
   
   
 ];
 
 var passwords = [
-  'xxxxx',
-  'xxxxxx'
+  'xxxxxxx',
+  'xxxxxxx',
+  'xxxxxxx'
 ];
 
 for (var i = 0; i < userNames.length; i++){
-
-
-
-
-
 
 
 var Nightmare = require('nightmare');
