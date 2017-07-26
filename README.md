@@ -4,9 +4,8 @@
 *  JavaScript
 
 # To-do:
-*  Change if statement to forEach()
-*  Create txt or js file(s) to include emails and passwords
+*  Create database. Allow user to select emails (with their respected passwords)  
 *  Set up proxies
 
 # Future:
-*  Build database to record the results of each post
+*  How to take into account of pop ups on the home page
